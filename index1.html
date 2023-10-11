@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>测试数据拦截看板</title>
+    <link rel="stylesheet" href="css/comon0.css" />
+    <link rel="stylesheet" href="css/test.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/sidebar-menu.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script> -->
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script language="JavaScript" src="js/js.js"></script>
+  </head>
+  <body>
+    <div class="loading">
+      <div class="loadbox"><img src="images/loading.gif" />页面加载中...</div>
+    </div>
+    <aside class="main-sidebar col-1">
+      <section class="sidebar">
+        <ul class="sidebar-menu">
+          <li class="header">MAIN NAVIGATION</li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Dashboard v1</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Dashboard v2</a>
+              </li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-files-o"></i>
+              <span>Layout Options</span>
+              <span class="label label-primary pull-right">4</span>
+            </a>
+            <ul class="treeview-menu" style="display: none">
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Top Navigation</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Boxed</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Fixed</a>
+              </li>
+              <li class="">
+                <a href="#"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-th"></i> <span>Widgets</span>
+              <small class="label pull-right label-info">new</small>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-pie-chart"></i>
+              <span>Charts</span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> ChartJS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Morris</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Flot</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Inline charts</a>
+              </li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-laptop"></i>
+              <span>UI Elements</span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> General</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Icons</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Buttons</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Sliders</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Timeline</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Modals</a>
+              </li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-edit"></i> <span>Forms</span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> General Elements</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Advanced Elements</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Editors</a>
+              </li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-table"></i> <span>Tables</span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Simple tables</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Data tables</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-calendar"></i> <span>Calendar</span>
+              <small class="label pull-right label-danger">3</small>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-envelope"></i> <span>Mailbox</span>
+              <small class="label pull-right label-warning">12</small>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-folder"></i> <span>Examples</span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Invoice</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Profile</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Login</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Register</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Lockscreen</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> 404 Error</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> 500 Error</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Blank Page</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Pace Page</a>
+              </li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-share"></i> <span>Multilevel</span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Level One</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-circle-o"></i> Level One
+                  <i class="fa fa-angle-left pull-right"></i
+                ></a>
+                <ul class="treeview-menu">
+                  <li>
+                    <a href="#"><i class="fa fa-circle-o"></i> Level Two</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-circle-o"></i> Level Two
+                      <i class="fa fa-angle-left pull-right"></i
+                    ></a>
+                    <ul class="treeview-menu">
+                      <li>
+                        <a href="#"
+                          ><i class="fa fa-circle-o"></i> Level Three</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa fa-circle-o"></i> Level Three</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Level One</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-book"></i> <span>Documentation</span></a
+            >
+          </li>
+          <li class="header">LABELS</li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-circle-o text-red"></i> <span>Important</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-circle-o text-yellow"></i>
+              <span>Warning</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-circle-o text-aqua"></i>
+              <span>Information</span></a
+            >
+          </li>
+        </ul>
+      </section>
+    </aside>
+    <div class="main col-11" >
+      <div class="head">
+        <h1>
+          <a href="">测试数据拦截看板</a>
+        </h1>
+        <div class="time" id="showTime"></div>
+      </div>
+      <div class="mainbox">
+        <ul class="clearfix">
+          <li>
+            <div class="boxall" style="height: calc(58% - 0.15rem)">
+              <div class="alltitle">Top Fail项</div>
+              <div class="boxnav" id="echarts4"></div>
+            </div>
+            <div class="boxall" style="height: calc(42% - 0.15rem)">
+              <div class="alltitle">标题名称</div>
+              <div class="boxnav" id="echarts3"></div>
+            </div>
+          </li>
+          <li>
+            <div class="boxall" style="height: calc(20% - 0.15rem)">
+              <ul class="row h100 clearfix">
+                <li class="col-6">
+                  <div class="sqzs h100">
+                    <p>测试数据总览</p>
+                    <h1><span>1111</span>台</h1>
+                  </div>
+                </li>
+                <li class="col-6">
+                  <ul class="row h100 clearfix">
+                    <li class="col-4">
+                      <div class="tit01">良率</div>
+                      <div class="piebox" id="pe01"></div>
+                    </li>
+                    <li class="col-4">
+                      <div class="tit01">直通率</div>
+                      <div class="piebox" id="pe02"></div>
+                    </li>
+                    <li class="col-4">
+                      <div class="tit01">焦率</div>
+                      <div class="piebox" id="pe03"></div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="boxall" style="height: calc(38% - 0.15rem)">
+              <div class="alltitle">标题名称</div>
+              <div class="boxnav" id="echarts1"></div>
+            </div>
+            <div class="boxall" style="height: calc(42% - 0.15rem)">
+              <div class="alltitle">标题名称</div>
+              <div class="boxnav" id="echarts2"></div>
+            </div>
+          </li>
+          <li>
+            <div class="boxall" style="height: calc(33.333% - 0.15rem)">
+              <div class="alltitle">标题名称</div>
+              <div class="boxnav" id="echarts5"></div>
+            </div>
+            <div class="boxall" style="height: calc(33.333% - 0.15rem)">
+              <div class="alltitle">标题名称</div>
+              <div class="boxnav" id="">
+                <table border="0" cellspacing="0">
+                  <tr>
+                    <th></th>
+                    <th>字段</th>
+                    <th>字段</th>
+                    <th>字段</th>
+                    <th>字段</th>
+                  </tr>
+                  <tr>
+                    <th>字段</th>
+                    <td>8098</td>
+                    <td>19.80%</td>
+                    <td>22</td>
+                    <td>368</td>
+                  </tr>
+                  <tr>
+                    <th>字段</th>
+                    <td>7506</td>
+                    <td>6.70%</td>
+                    <td>22</td>
+                    <td>339</td>
+                  </tr>
+                  <tr>
+                    <th>字段</th>
+                    <td>3261</td>
+                    <td>32.30%</td>
+                    <td>10</td>
+                    <td>325.7</td>
+                  </tr>
+                  <tr>
+                    <th>字段</th>
+                    <td>1993</td>
+                    <td>201%</td>
+                    <td>10</td>
+                    <td>199</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="boxall" style="height: calc(33.333% - 0.15rem)">
+              <div class="alltitle">标题名称</div>
+              <div
+                class="boxnav"
+                id="echarts6"
+                style="height: calc(100% - 0.3rem)"
+              ></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+	    $.sidebarMenu($('.sidebar-menu'))
+	  </script>
+  </body>
+</html>
